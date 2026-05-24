@@ -1,1 +1,190 @@
 # yyh602.github.io
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>風華台南：從府城舊事到常民記憶</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'BiauKai', 'Microsoft JhengHei', Arial, sans-serif; background-color: #FDFBF7; color: #2D2D2D; }
+        .bg-tainan-red { background-color: #8B0000; }
+        .text-tainan-red { color: #8B0000; }
+        .border-tainan-red { border-color: #8B0000; }
+        /* 時空滑桿樣式 */
+        .slider-container { position: relative; width: 100%; height: 500px; overflow: hidden; }
+        .slider-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background-color: #18181b; }
+        .img-after { clip-path: inset(0 0 0 50%); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 bg-tainan-red text-white py-4 px-6 z-50 shadow-md flex justify-between items-center">
+        <div class="text-xl font-bold tracking-wider">風華台南：從府城舊事到常民記憶</div>
+        <div class="space-x-6 text-sm">
+            <a href="#hero" class="hover:text-amber-300 transition">首頁</a>
+            <a href="#section1" class="hover:text-amber-300 transition">府城神聖工藝</a>
+            <a href="#section2" class="hover:text-amber-300 transition">近代摩登風華</a>
+            <a href="#section3" class="hover:text-amber-300 transition">安平港埠常民</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="min-h-screen flex flex-col justify-center items-center bg-zinc-900 text-white text-center px-4 relative pt-16">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/%E6%9E%97%E7%99%BE%E8%B2%A8.jpg');"></div>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-widest">風華台南</h1>
+            <p class="text-xl md:text-2xl mb-6 text-amber-400 font-light tracking-wide">從府城舊事到常民記憶</p>
+            <p class="text-sm md:text-base text-zinc-300 leading-relaxed mb-8 font-serif">
+                本數位典藏專案聚焦於台灣歷史起點——台南。透過整合傳統神轎工藝、近代摩登地標與安平海港的建築殘跡，試圖跨越時間的洪流，為常民生活與無形文化資產留下可供追溯的數位印記，建構府城立體的集體記憶。
+            </p>
+            <a href="#section1" class="inline-block bg-amber-500 hover:bg-amber-600 text-zinc-900 font-bold px-8 py-3 rounded shadow-lg transition">開始啟程</a>
+        </div>
+    </header>
+
+    <section id="section1" class="min-h-screen py-24 px-6 max-w-6xl mx-auto flex flex-col justify-center border-b border-zinc-200">
+        <h2 class="text-2xl font-bold text-tainan-red mb-8 tracking-wider border-l-4 border-tainan-red pl-3">展區一 ｜ 府城神聖工藝：永川大轎</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div class="space-y-4">
+                <div class="bg-white p-2 rounded shadow-sm border border-zinc-200">
+                    <img class="w-full h-80 object-contain bg-zinc-50 rounded" src="永川大轎.jpg" alt="永川大轎實體照片">
+                </div>
+                <div class="bg-white p-4 rounded shadow-sm border border-zinc-100">
+                    <h3 class="text-sm font-bold text-zinc-500 mb-3 uppercase tracking-wider">展品後設資料 (Metadata)</h3>
+                    <table class="w-full text-sm text-left border-collapse">
+                        <tbody>
+                            <tr class="border-b"><td class="py-2 font-bold w-1/4">Title</td><td class="py-2 text-zinc-700">台南神農街「永川大轎」傳統木作神轎工藝紀錄</td></tr>
+                            <tr class="border-b"><td class="py-2 font-bold">Creator</td><td class="py-2 text-zinc-700">王永川（永川大轎創始人）及其傳人</td></tr>
+                            <tr class="border-b"><td class="py-2 font-bold">Subject</td><td class="py-2 text-zinc-700">傳統木雕、神轎工藝、民間信仰、五條港文化</td></tr>
+                            <tr class="border-b"><td class="py-2 font-bold">Publisher</td><td class="py-2 text-zinc-700">數位典藏管理課程期末策展</td></tr>
+                            <tr class="border-b"><td class="py-2 font-bold">Date / Type</td><td class="py-2 text-zinc-700">2026 / Physical Object</td></tr>
+                            <tr class="border-b"><td class="py-2 font-bold">Identifier</td><td class="py-2 text-zinc-700">Tainan-CH-001</td></tr>
+                            <tr><td class="py-2 font-bold">文資類別</td><td class="py-2 text-tainan-red font-bold">傳統工藝 / 無形文化資產保存技術</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <p class="leading-relaxed text-zinc-700">
+                    <strong class="text-zinc-900 block mb-1">選擇理由與典藏價值：</strong>
+                    神轎工藝結合了木雕、鑿花、漆藝與傳統力學，是台南府城迎神賽會文化中不可或缺的工藝結晶。隨著現代機械化生產普及，純手工鑿刻的神轎日益稀少。典藏此物件與其製程，不僅是保存一項國家級重要傳統工藝技術，更能透過神轎的紋飾，展現台南獨特的民間信仰生態。
+                </p>
+                <div class="bg-amber-50 p-4 rounded border border-amber-200 mt-6">
+                    <h4 class="text-xs font-bold text-amber-800 tracking-wider mb-3">★【互動體驗一：神轎製作工序探索】</h4>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <button onclick="showStep(1, '精選在地優質木材（如樟木），依神轎部位進行精準材切與乾燥。')" class="step-btn bg-amber-600 text-white text-xs px-2 py-1 rounded">1. 備料</button>
+                        <button onclick="showStep(2, '匠師憑藉經驗，在木料上徒手繪製複雜的神獸與傳統文飾線稿。')" class="step-btn bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded">2. 劃線</button>
+                        <button onclick="showStep(3, '運用數十種不同鑿刀，立體透雕出戰將、飛龍等精細的鑿花裝飾。')" class="step-btn bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded">3. 鑿花</button>
+                        <button onclick="showStep(4, '採用傳統魯班榫卯結構，不傷一釘，將大轎各組件嚴密卡合組裝。')" class="step-btn bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded">4. 組裝</button>
+                        <button onclick="showStep(5, '經過多次反覆打磨、上底漆與安金箔，使神轎呈現金碧輝煌的視覺。')" class="step-btn bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded">5. 漆藝</button>
+                    </div>
+                    <p id="step-desc" class="text-sm text-amber-900 bg-white p-2 rounded border border-amber-200 min-h-[50px]">精選在地優質木材（如樟木），依神轎部位進行精準材切與乾燥。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2" class="min-h-screen py-24 px-6 bg-zinc-50 border-b border-zinc-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-tainan-red mb-8 tracking-wider border-l-4 border-tainan-red pl-3">展區二 ｜ 近代摩登風華：林百貨老照片</h2>
+            
+            <div class="mb-8">
+                <h4 class="text-xs font-bold text-zinc-500 tracking-wider mb-2 text-center">★【互動體驗二：左右拖曳滑桿查看 1930s ⇄ 現代 空間變遷】</h4>
+                <div class="slider-container rounded shadow-md border border-zinc-300">
+                    <img class="slider-img grayscale" src="林百貨.jpg" alt="日治時期林百貨黑白歷史照片">
+                    <img id="active-img" class="slider-img" src="林百貨現在.jpg" style="filter: none;" alt="林百貨現況對照">
+                    <input type="range" min="0" max="100" value="50" oninput="slideTime(this.value)" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20">
+                    <div id="slider-line" class="absolute top-0 bottom-0 left-1/2 w-1 bg-amber-400 z-10 pointer-events-none"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+                <div class="bg-white p-4 rounded shadow-sm border border-zinc-200">
+                    <h3 class="font-bold text-zinc-500 mb-2">展品後設資料 (Metadata)</h3>
+                    <p><strong>Title:</strong> 1930年代台南末廣町市街與林百貨歷史影像</p>
+                    <p><strong>Source:</strong> 轉錄自國立臺灣歷史博物館典藏數位開放資料</p>
+                    <p><strong>Coverage:</strong> 台南市中西區中正路（舊末廣町）</p>
+                    <p><strong>文資類別:</strong> 歷史照片 / 近代都市生活史料</p>
+                </div>
+                <div>
+                    <p class="leading-relaxed text-zinc-700">
+                        <strong>選擇理由：</strong> 林百貨是台灣歷史上第二家、也是中南部第一家百貨公司，配有當時極為罕見的電梯（流籠）。這張老照片見證了台南在日治時期走向現代化都市發展與摩登生活風格的起點。透過數位典藏，能與當前林百貨的古蹟活化進行古今對照，具備極高的城市空間變遷與社會文化史研究價值。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3" class="min-h-screen py-24 px-6 max-w-6xl mx-auto flex flex-col justify-center">
+        <h2 class="text-2xl font-bold text-tainan-red mb-8 tracking-wider border-l-4 border-tainan-red pl-3">展區三 ｜ 安平港埠常民：糯米牆與泥塑劍獅</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="relative rounded shadow-md overflow-hidden border border-zinc-300 bg-zinc-100 flex items-center justify-center">
+                <img class="w-full h-[400px] object-cover" src="安平劍獅.jpg" alt="安平劍獅與傳統老牆照片">
+                
+                <button onclick="showHotspot('屋簷防護工法：安平民宅多運用傳統薄磚疊砌成簷，防止雨水直接沖刷下方脆弱的蚵殼灰牆面體結構。')" class="absolute top-[12%] left-[45%] w-4 h-4 bg-amber-400 rounded-full animate-ping"></button>
+                <button onclick="showHotspot('屋簷防護工法：安平民宅多運用傳統薄磚疊砌成簷，防止雨水直接沖刷下方脆弱的蚵殼灰牆面體結構。')" class="absolute top-[12%] left-[45%] w-4 h-4 bg-amber-500 rounded-full text-white text-[10px] flex items-center justify-center font-bold shadow">1</button>
+
+                <button onclick="showHotspot('辟邪泥塑劍獅：安平特有的民宅辟邪物。面對狹窄巷弄的住宅，藉由面容威猛、口咬雙劍的塑像來凝聚社區認同並化解地理風水沖煞。')" class="absolute top-[35%] left-[48%] w-4 h-4 bg-amber-400 rounded-full animate-ping"></button>
+                <button onclick="showHotspot('辟邪泥塑劍獅：安平特有的民宅辟邪物。面對狹窄巷弄的住宅，藉由面容威猛、口咬雙劍的塑像來凝聚社區認同並化解地理風水沖煞。')" class="absolute top-[35%] left-[48%] w-4 h-4 bg-amber-500 rounded-full text-white text-[10px] flex items-center justify-center font-bold shadow">2</button>
+
+                <button onclick="showHotspot('蚵殼灰與糯米基礎：早期安平臨海，缺乏內陸石灰。先民就地取材燒製蚵殼為灰，並混合黑糖水、糯米漿作為黏著劑裹於外牆，展現與海洋共生的低碳智慧。')" class="absolute top-[75%] left-[30%] w-4 h-4 bg-amber-400 rounded-full animate-ping"></button>
+                <button onclick="showHotspot('蚵殼灰與糯米基礎：早期安平臨海，缺乏內陸石灰。先民就地取材燒製蚵殼為灰，並混合黑糖水、糯米漿作為黏著劑裹於外牆，展現與海洋共生的低碳智慧。')" class="absolute top-[75%] left-[30%] w-4 h-4 bg-amber-500 rounded-full text-white text-[10px] flex items-center justify-center font-bold shadow">3</button>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow-sm border border-zinc-100 text-sm">
+                    <h3 class="font-bold text-zinc-500 mb-2">展品後設資料 (Metadata)</h3>
+                    <p><strong>Title:</strong> 台南安平舊聚落蚵殼灰糯米牆與泥塑劍獅殘壁</p>
+                    <p><strong>Identifier:</strong> Tainan-AR-003</p>
+                    <p><strong>保存現況:</strong> <span class="text-red-600 font-bold">瀕危（受都市更新與自然風化影響，正迅速消逝）</span></p>
+                </div>
+                <div class="p-4 bg-zinc-100 rounded border border-zinc-300">
+                    <h4 class="text-xs font-bold text-zinc-700 tracking-wider mb-2">★【互動體驗三：點擊圖片上黃色數字探索常民構造】</h4>
+                    <p id="hotspot-display" class="text-sm text-zinc-800 italic">請點擊左側圖片中的熱點數字，即可顯示先民就地取材的低碳工法與民俗心理細節說明。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-900 text-zinc-400 text-xs py-8 px-6 text-center border-t border-zinc-800 leading-relaxed space-y-2">
+        <p class="text-amber-400 font-semibold text-sm">數位典藏管理 期末報告成果展示網頁</p>
+        <p>指導教授：李銘峰 Antonio Lee 教授 ｜ 國立臺中科技大學 資訊管理系</p>
+        <p class="bg-zinc-800 text-zinc-300 inline-block px-3 py-1 rounded my-2">
+            🛡️ 數位典藏 QA/QC 品質管制宣告：本站詮釋資料於 2026-05-17 由核心研究員 Yang Yong-han 實施田野與文獻核對確認無誤。
+        </p>
+        <p>© 2026 本專案內容符合學術教育使用規範。授權標示：創用 CC 姓名標示-非商業性 4.0 國際授權條款。</p>
+    </footer>
+
+    <script>
+        // 互動點一：工藝製程切換
+        function showStep(stepNum, text) {
+            document.getElementById('step-desc').innerText = text;
+            const buttons = document.querySelectorAll('.step-btn');
+            buttons.forEach((btn, index) => {
+                if (index === (stepNum - 1)) {
+                    btn.classList.remove('bg-amber-100', 'text-amber-800');
+                    btn.classList.add('bg-amber-600', 'text-white');
+                } else {
+                    btn.classList.remove('bg-amber-600', 'text-white');
+                    btn.classList.add('bg-amber-100', 'text-amber-800');
+                }
+            });
+        }
+
+        // 互動點二：時空滑桿拖曳效果
+        function slideTime(value) {
+            const imgAfter = document.getElementById('active-img');
+            const line = document.getElementById('slider-line');
+            imgAfter.style.clipPath = `inset(0 0 0 ${value}%)`;
+            line.style.left = `${value}%`;
+        }
+
+        // 互動點三：常民構造熱點點擊
+        function showHotspot(infoText) {
+            document.getElementById('hotspot-display').innerText = infoText;
+            document.getElementById('hotspot-display').classList.remove('italic', 'text-zinc-800');
+            document.getElementById('hotspot-display').classList.add('text-tainan-red', 'font-bold');
+        }
+    </script>
+</body>
+</html>
